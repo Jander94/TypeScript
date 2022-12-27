@@ -33,5 +33,36 @@ let coords = {
 coords.y = 15;
 console.log(coords);
 const arr1 = [1, 2, 3];
-// const arr2: OnlyNumberArray = ['1', '2', '3']
+//const arr2: OnlyNumberArray = ['1', '2', '3']
 console.log(arr1);
+const goku = {
+    name: 'Goku',
+    age: 50,
+    superpowers: ['Kamehameha', 'Genki Dama'],
+};
+console.log(goku);
+const pessoa = {
+    name: 'Jander',
+    type: 'Revolver',
+    caliber: 38
+};
+console.log(pessoa);
+// 7 - readonly array
+let myArray = ['Maçã', 'Laranja', 'Banana'];
+//myArray[3] = 'Mamão'
+myArray = myArray.map((item) => {
+    return `fruta: ${item}`;
+});
+console.log(myArray);
+const myNumberArray = [1, 2, 3, 4, 5];
+const anotherUser = ['Matheus', 30];
+anotherUser[1] = 'João';
+console.log(anotherUser);
+// 9 - tuplas com readonly
+function showNumbers(numbers) {
+    // numbers[0] = 10
+    console.log(numbers[0]);
+    console.log(numbers[1]);
+}
+showNumbers([1, 2]);
+// showNumbers(['teste', 1])
